@@ -13,12 +13,6 @@ export const GlobalStyles = createGlobalStyle`
         
         transition: all 0.30s linear;
     }
-
-    @media screen and (max-width: 768px) {
-        .Footer {
-            border-left: none;
-        }
-    }
     
     .Footer .Social-Links a {
         color: ${({theme}) => theme.textColor};
@@ -28,5 +22,11 @@ export const GlobalStyles = createGlobalStyle`
     .ThemeToggler .circle {
         left: ${({theme}) => theme.circlePos};
         transition: all 0.30s linear;   
+    }
+
+    @media screen and (orientation: portrait) {
+        .Footer {
+            border-left: none;
+        }
     }
 `

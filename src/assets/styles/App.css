@@ -9,32 +9,30 @@
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr;
+    overflow-x: hidden;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (orientation: portrait) {
     .MainLayout {
         grid-template-columns: 1fr;
     }
 }
 
 .Footer {
-    border-left: 2px solid #fff;
     padding: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
     position: relative;
 }
 
 .Footer .Profile-Image {
-    width: 30%;
-    min-width: 130px;
+    width: 35%;
     aspect-ratio: 1/1;
-    border-radius: 50%;
+    max-width: 170px;
     border: 2px solid #fff;
-    margin-bottom: 0.4rem;
+    border-radius: 50%;
 }
 
 .Footer .Profile-Image img {
@@ -96,17 +94,27 @@
     bottom: 25%;
     margin-inline: auto;
     height: 1rem;
-    width: 3rem;
+    width: 2.5rem;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;    
+    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 1rem;
     cursor: pointer;
 }
 
 .ThemeToggler .circle {
     position: absolute;
-    top: 0;
+    top: -30%;
     background-color: #000;
-    height: 100%;
+    height: 170%;
     aspect-ratio: 1/1;
     border-radius: 50%;
+}
+
+@media screen and (orientation: portrait) {
+    .Footer {
+        border-left: none;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -119,5 +127,13 @@
         width: 3rem;
         cursor: pointer;
     }
-    
+}
+
+.toggle-container {
+    width: 100%;
+    height: 3rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
