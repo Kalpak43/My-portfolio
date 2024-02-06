@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2c80fff3.css",
+    "main.js": "/static/js/main.d25ef2e1.js",
+    "static/js/787.86751347.chunk.js": "/static/js/787.86751347.chunk.js",
+    "static/media/KalpakGoshikwar.webp": "/static/media/KalpakGoshikwar.901250e54b629595a7f6.webp",
+    "index.html": "/index.html",
+    "main.2c80fff3.css.map": "/static/css/main.2c80fff3.css.map",
+    "main.d25ef2e1.js.map": "/static/js/main.d25ef2e1.js.map",
+    "787.86751347.chunk.js.map": "/static/js/787.86751347.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2c80fff3.css",
+    "static/js/main.d25ef2e1.js"
+  ]
+}
